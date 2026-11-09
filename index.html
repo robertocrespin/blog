@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevSoftware Hub - Tecnología y Futuro del Software</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Encabezado / Navegación -->
+  <header>
+    <div class="logo">
+      <h1>DevSoftware Hub</h1>
+      <p>Instituto Nacional General Francisco Menéndez - INFRAMEN</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#historia">Origen e Historia</a></li>
+        <li><a href="#metodologias">Metodologías</a></li>
+        <li><a href="#lenguajes">Lenguajes</a></li>
+        <li><a href="#carreras">Carreras</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner Principal -->
+  <section id="inicio" class="hero">
+    <h2>Tecnología y futuro del software</h2>
+    <p>Origen, metodologías, lenguajes y carreras</p>
+  </section>
+
+  <!-- Sección Introducción y Alcances -->
+  <section class="container">
+    <h2>Introducción y Objetivos</h2>
+    <p>El software ha evolucionado junto con la computación y hoy impulsa servicios, empresas y herramientas cotidianas. Su desarrollo combina lenguajes, metodologías, datos y equipos con distintas especialidades.</p>
+    
+    <div class="grid-2">
+      <div class="card">
+        <h3>Objetivos</h3>
+        <ul>
+          <li>Explicar hitos históricos y conceptos para comprender el desarrollo de software.</li>
+          <li>Presentar metodologías, lenguajes y áreas profesionales relacionadas.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Alcances</h3>
+        <ul>
+          <li>Visión introductoria desde la programación física hasta la nube y la IA.</li>
+          <li>Ejemplos de perfiles y herramientas sin sustituir formación especializada.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Historia -->
+  <section id="historia" class="container bg-alt">
+    <h2>1. Origen e Historia del Software</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Décadas de 1940 y 1950</h3>
+        <p>Programar podía implicar cambiar cables e interruptores manualmente. Destaca Ada Lovelace por escribir un algoritmo estructurado para una máquina analítica.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Décadas de 1960 y 1970</h3>
+        <p>Surgieron lenguajes que facilitaron expresar instrucciones claras para las computadoras.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Décadas de 1980 y 1990</h3>
+        <p>La computación personal y la web ampliaron notablemente el acceso al software.</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Años 2000 en adelante</h3>
+        <p>La nube facilita desplegar servicios e infraestructura en internet, mientras la inteligencia artificial se consolida como campo protagónico.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Metodologías -->
+  <section id="metodologias" class="container">
+    <h2>2. Metodologías de Desarrollo</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Modelo en Cascada</h3>
+        <p>Organiza requisitos, diseño, código y pruebas en etapas lineales continuas.</p>
+      </div>
+      <div class="card">
+        <h3>Agile y Scrum</h3>
+        <p>Trabajan de forma iterativa, entregando funcionalidades en ciclos cortos llamados <em>sprints</em>.</p>
+      </div>
+      <div class="card">
+        <h3>DevOps y CI/CD</h3>
+        <p>Promueven la colaboración entre desarrollo y operaciones, automatizando integración y despliegues.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Lenguajes -->
+  <section id="lenguajes" class="container bg-alt">
+    <h2>3. Lenguajes y Tecnologías Clave</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>JavaScript y TypeScript</h3>
+        <p>Esenciales para el desarrollo web en el navegador y en el servidor mediante Node.js.</p>
+      </div>
+      <div class="card">
+        <h3>Python</h3>
+        <p>Muy utilizado en inteligencia artificial, análisis de datos, automatización y backend.</p>
+      </div>
+      <div class="card">
+        <h3>Java, C# y SQL</h3>
+        <p>Java y C# se usan en aplicaciones corporativas; SQL permite gestionar bases de datos relacionales.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Orientación Profesional y Carreras -->
+  <section id="carreras" class="container">
+    <h2>4. Orientación Profesional y Carreras</h2>
+    <p class="section-intro">Haz clic en cada área para ver las herramientas requeridas:</p>
+    
+    <div class="grid-2">
+      <div class="card interactive-card" onclick="mostrarInfo('frontend')">
+        <h3>Frontend</h3>
+        <p>Interfaces y experiencia visual en navegadores.</p>
+      </div>
+      <div class="card interactive-card" onclick="mostrarInfo('backend')">
+        <h3>Backend</h3>
+        <p>Lógica de servidores, construcción de APIs y bases de datos.</p>
+      </div>
+      <div class="card interactive-card" onclick="mostrarInfo('ciberseguridad')">
+        <h3>Ciberseguridad</h3>
+        <p>Protección de sistemas, análisis de riesgos y redes.</p>
+      </div>
+      <div class="card interactive-card" onclick="mostrarInfo('datos')">
+        <h3>Ciencia de Datos e IA</h3>
+        <p>Uso de datos y modelos para descubrir patrones inteligentes.</p>
+      </div>
+    </div>
+
+    <!-- Panel de detalle dinámico con JavaScript -->
+    <div id="detalle-carrera" class="detail-box hidden">
+      <h3 id="titulo-carrera"></h3>
+      <p id="desc-carrera"></p>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p><strong>DevSoftware Hub</strong> — Instituto Nacional General Francisco Menéndez (INFRAMEN)</p>
+    <p>Bibliografía y recursos: Documentación MDN, recursos de Python, Java, SQL y comunidades de datos.</p>
+  </footer>
+
+  <script src="js/java.js"></script>
+</body>
+</html>
